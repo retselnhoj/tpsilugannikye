@@ -1,0 +1,131 @@
+body{
+    background-color: hsl(17, 100%, 50%);
+    margin: 0%;
+}
+.nav-bar{
+    top: 0;
+    position: fixed; /* For fixing the navigation bar */
+    width: 100%;
+    z-index: 1000;
+}
+.container-div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #FFB601;
+    
+}
+.container-div > ul{
+    display: flex;
+    list-style: none;
+    margin: 0%;
+    padding: 0%;
+    gap: 10px;
+    margin-right: 60px;
+    
+}
+.container-div > ul li{
+    padding: 10px;
+    border-radius: 10px;
+}
+.container-div > ul li:hover{
+    background-color: #ff7f50;
+}
+.container-div > ul li a{
+    text-decoration: none;
+    font-family: 'Bryndanwrite';
+    color: black;
+}
+/* This is for the div of the font style of the brandname */
+.header-div{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 15px;
+    gap: 5px;
+}
+/* This is for the font style of the brandname */
+@font-face {
+    font-family: 'Bryndanwrite'; /* Font family name */
+    src: url('font/BryndanWriteBook-nGPM.ttf') format('truetype'); /* Path to .ttf font file */
+}
+.header-div > h5{
+    font-family: 'Bryndanwrite', sans-serif; /* Use Bryndanwrite font */
+    margin-top: 7px;
+}
+/* End for the font style of brand name */
+
+/* This is for the temporary carousel */
+.carousel-item > img{
+    width: auto;
+    height: 350px;
+}
+#carouselExampleAutoplaying{
+    width: 870px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.carousel-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 90vh;
+  margin-top: 45px;
+}
+/* End for the carousel */
+/* This is for menu div */
+.menu-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 80vh;
+}
+
+.best-sellers {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.menu-sections {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+}
+
+.menu-section:last-child {
+    margin-right: 0;
+}
+
+.menu-section h2 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.menu-list {
+    list-style: none;
+    padding: 0;
+}
+
+.menu-list li {
+    margin-bottom: 10px;
+}
+
+.price {
+    font-weight: bold;
+    color: #007bff;
+}
+
+/* End for the menu div */
